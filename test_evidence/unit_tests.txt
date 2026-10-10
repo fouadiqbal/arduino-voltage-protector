@@ -1,0 +1,38 @@
+PASS power-up load off
+PASS startup delay not shortened
+PASS startup delay completes
+PASS OV disconnects on first sample
+PASS reset rejected while unsafe
+PASS fault stays latched after recovery
+PASS safe reset accepted
+PASS reset still requires delay
+PASS reset delay completes
+PASS UV disconnects
+PASS OC disconnects on first sample
+PASS first fault cause retained
+PASS threshold equality does not trip
+PASS lower threshold equality does not trip
+PASS invalid sensor disconnects
+PASS invalid sensor blocks reset
+PASS restart voltage hysteresis
+PASS restart current hysteresis
+PASS unsafe recovery band restarts timer
+PASS continuous safe recovery succeeds
+PASS millis rollover waits
+PASS millis rollover reconnects correctly
+PASS PC setting applies and disconnects
+PASS PC current setting
+PASS PC delay setting
+PASS PC minimum voltage setting
+PASS invalid range is atomic
+PASS cross-field validation
+PASS reject negative number
+PASS reject trailing junk
+PASS reject integer overflow
+PASS reject missing number
+PASS reject extra token
+PASS no force-on command
+PASS status request
+PASS local setting disconnects
+PASS settings cannot clear a fault
+RESULT passed=37 failed=0

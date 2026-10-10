@@ -1,0 +1,135 @@
+[
+  {
+    "time_us": 0,
+    "voltage_V": 230,
+    "current_mA": 2000,
+    "load_D8": 0,
+    "event": "input step"
+  },
+  {
+    "time_us": 4079602,
+    "voltage_V": 230,
+    "current_mA": 2000,
+    "load_D8": 1,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 4400000,
+    "voltage_V": 270,
+    "current_mA": 2000,
+    "load_D8": 1,
+    "event": "input step"
+  },
+  {
+    "time_us": 4403982,
+    "voltage_V": 270,
+    "current_mA": 2000,
+    "load_D8": 0,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 4485183,
+    "voltage_V": 230,
+    "current_mA": 2000,
+    "load_D8": 0,
+    "event": "input step"
+  },
+  {
+    "time_us": 11489034,
+    "voltage_V": 230,
+    "current_mA": 2000,
+    "load_D8": 1,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 11828584,
+    "voltage_V": 230,
+    "current_mA": 2000,
+    "load_D8": 0,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 15015687,
+    "voltage_V": 230,
+    "current_mA": 2000,
+    "load_D8": 1,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 15270784,
+    "voltage_V": 230,
+    "current_mA": 6000,
+    "load_D8": 1,
+    "event": "input step"
+  },
+  {
+    "time_us": 15271662,
+    "voltage_V": 230,
+    "current_mA": 6000,
+    "load_D8": 0,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 15271662,
+    "voltage_V": 230,
+    "current_mA": 1000,
+    "load_D8": 0,
+    "event": "input step"
+  },
+  {
+    "time_us": 18329834,
+    "voltage_V": 230,
+    "current_mA": 1000,
+    "load_D8": 1,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 18859664,
+    "voltage_V": 170,
+    "current_mA": 1000,
+    "load_D8": 1,
+    "event": "input step"
+  },
+  {
+    "time_us": 18863281,
+    "voltage_V": 170,
+    "current_mA": 1000,
+    "load_D8": 0,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 18874664,
+    "voltage_V": 230,
+    "current_mA": 1000,
+    "load_D8": 0,
+    "event": "input step"
+  },
+  {
+    "time_us": 21899029,
+    "voltage_V": 230,
+    "current_mA": 1000,
+    "load_D8": 1,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 22075865,
+    "voltage_V": 300,
+    "current_mA": 1000,
+    "load_D8": 1,
+    "event": "input step"
+  },
+  {
+    "time_us": 22080418,
+    "voltage_V": 300,
+    "current_mA": 1000,
+    "load_D8": 0,
+    "event": "D8 edge"
+  },
+  {
+    "time_us": 22171665,
+    "voltage_V": 300,
+    "current_mA": 1000,
+    "load_D8": 0,
+    "event": "end"
+  }
+]

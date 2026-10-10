@@ -1,0 +1,438 @@
+{
+  "version": 1,
+  "author": "Fouad Iqbal",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "left": 0,
+      "top": 70,
+      "rotate": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd",
+      "left": 450,
+      "top": -110,
+      "rotate": 0,
+      "attrs": {
+        "pins": "i2c",
+        "i2cAddress": "0x27"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "voltage",
+      "left": -250,
+      "top": 60,
+      "rotate": 0,
+      "attrs": {
+        "value": "785"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "current",
+      "left": -250,
+      "top": 230,
+      "rotate": 0,
+      "attrs": {
+        "value": "102"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "title",
+      "left": -250,
+      "top": -210,
+      "rotate": 0,
+      "attrs": {
+        "text": "ARDUINO UNO VOLTAGE PROTECTOR"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "vlabel",
+      "left": -285,
+      "top": 15,
+      "rotate": 0,
+      "attrs": {
+        "text": "VOLTAGE | A0 | 0-300 V"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "ilabel",
+      "left": -285,
+      "top": 185,
+      "rotate": 0,
+      "attrs": {
+        "text": "CURRENT | A1 | 0-20 A"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lcdlabel",
+      "left": 450,
+      "top": -160,
+      "rotate": 0,
+      "attrs": {
+        "text": "I2C LCD | SDA: A4, SCL: A5"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "legend",
+      "left": -250,
+      "top": 450,
+      "rotate": 0,
+      "attrs": {
+        "text": "5 V simulation | Red: +5 V | Black: GND | Orange: analog | Blue: controls"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "MENU",
+      "left": 20,
+      "top": -110,
+      "rotate": 0,
+      "attrs": {
+        "color": "blue",
+        "label": "MENU"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "PLUS",
+      "left": 115,
+      "top": -110,
+      "rotate": 0,
+      "attrs": {
+        "color": "blue",
+        "label": "PLUS"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "MINUS",
+      "left": 210,
+      "top": -110,
+      "rotate": 0,
+      "attrs": {
+        "color": "blue",
+        "label": "MINUS"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "RESET",
+      "left": 305,
+      "top": -110,
+      "rotate": 0,
+      "attrs": {
+        "color": "blue",
+        "label": "RESET"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "load",
+      "left": 490,
+      "top": 260,
+      "rotate": 0,
+      "attrs": {
+        "color": "green",
+        "label": "LOAD"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "loadR",
+      "left": 445,
+      "top": 325,
+      "rotate": 0,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "fault",
+      "left": 640,
+      "top": 260,
+      "rotate": 0,
+      "attrs": {
+        "color": "red",
+        "label": "FAULT"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "faultR",
+      "left": 595,
+      "top": 325,
+      "rotate": 0,
+      "attrs": {
+        "value": "330"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "MENU:1.l",
+      "uno:10",
+      "blue",
+      [
+        "v35",
+        "*",
+        "v-25"
+      ]
+    ],
+    [
+      "PLUS:1.l",
+      "uno:9",
+      "blue",
+      [
+        "v47",
+        "*",
+        "v-37"
+      ]
+    ],
+    [
+      "PLUS:2.l",
+      "MENU:2.l",
+      "black",
+      [
+        "v-35",
+        "*",
+        "v-35"
+      ]
+    ],
+    [
+      "MINUS:1.l",
+      "uno:7",
+      "blue",
+      [
+        "v59",
+        "*",
+        "v-49"
+      ]
+    ],
+    [
+      "MINUS:2.l",
+      "PLUS:2.l",
+      "black",
+      [
+        "v-35",
+        "*",
+        "v-35"
+      ]
+    ],
+    [
+      "RESET:1.l",
+      "uno:6",
+      "blue",
+      [
+        "v71",
+        "*",
+        "v-61"
+      ]
+    ],
+    [
+      "RESET:2.l",
+      "MINUS:2.l",
+      "black",
+      [
+        "v-35",
+        "*",
+        "v-35"
+      ]
+    ],
+    [
+      "MENU:2.l",
+      "uno:GND.3",
+      "black",
+      [
+        "h-65",
+        "v130",
+        "*",
+        "v-15"
+      ]
+    ],
+    [
+      "voltage:SIG",
+      "uno:A0",
+      "orange",
+      [
+        "v45",
+        "h120",
+        "v215",
+        "*",
+        "v40"
+      ]
+    ],
+    [
+      "current:SIG",
+      "uno:A1",
+      "orange",
+      [
+        "v45",
+        "h140",
+        "v65",
+        "*",
+        "v60"
+      ]
+    ],
+    [
+      "voltage:VCC",
+      "current:VCC",
+      "red",
+      [
+        "h-30",
+        "*",
+        "h-30"
+      ]
+    ],
+    [
+      "voltage:GND",
+      "current:GND",
+      "black",
+      [
+        "h-45",
+        "*",
+        "h-45"
+      ]
+    ],
+    [
+      "current:VCC",
+      "uno:5V",
+      "red",
+      [
+        "v90",
+        "*",
+        "v90"
+      ]
+    ],
+    [
+      "current:GND",
+      "uno:GND.1",
+      "black",
+      [
+        "v110",
+        "*",
+        "v110"
+      ]
+    ],
+    [
+      "uno:A4",
+      "lcd:SDA",
+      "purple",
+      [
+        "v40",
+        "h80",
+        "*",
+        "h-45"
+      ]
+    ],
+    [
+      "uno:A5",
+      "lcd:SCL",
+      "purple",
+      [
+        "v60",
+        "h95",
+        "*",
+        "h-25"
+      ]
+    ],
+    [
+      "uno:5V",
+      "lcd:VCC",
+      "red",
+      [
+        "v90",
+        "h240",
+        "*",
+        "h-65"
+      ]
+    ],
+    [
+      "uno:GND.2",
+      "lcd:GND",
+      "black",
+      [
+        "v110",
+        "h200",
+        "*",
+        "h-85"
+      ]
+    ],
+    [
+      "uno:8",
+      "loadR:1",
+      "green",
+      [
+        "v-30",
+        "h210",
+        "v260",
+        "*",
+        "h-20"
+      ]
+    ],
+    [
+      "loadR:2",
+      "load:A",
+      "green",
+      [
+        "h20"
+      ]
+    ],
+    [
+      "uno:13",
+      "faultR:1",
+      "red",
+      [
+        "v-30",
+        "h365",
+        "v260",
+        "*",
+        "h-20"
+      ]
+    ],
+    [
+      "faultR:2",
+      "fault:A",
+      "red",
+      [
+        "h20"
+      ]
+    ],
+    [
+      "load:C",
+      "fault:C",
+      "black",
+      [
+        "v105",
+        "*",
+        "v105"
+      ]
+    ],
+    [
+      "fault:C",
+      "uno:GND.2",
+      "black",
+      [
+        "v105",
+        "*",
+        "v110"
+      ]
+    ]
+  ],
+  "serialMonitor": {
+    "display": "always",
+    "newline": "lf",
+    "convertEol": true
+  }
+}

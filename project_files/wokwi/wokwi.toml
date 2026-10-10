@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = '../build/firmware/VoltageProtector.ino.hex'
+elf = '../build/firmware/VoltageProtector.ino.elf'

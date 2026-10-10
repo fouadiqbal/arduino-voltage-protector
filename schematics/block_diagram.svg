@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#007c91"/></marker></defs>
+<rect width="1200" height="510" fill="#f3f6fa"/>
+<g font-family="Arial, sans-serif" fill="#223047">
+<text x="48" y="55" font-size="30" font-weight="bold">Arduino Uno voltage protector</text>
+<text x="48" y="86" font-size="17">Implemented demonstrator: USB powered, 0-5 V signals, no mains connections</text>
+<g fill="white" stroke="#c8d3df" stroke-width="2">
+<rect x="48" y="130" width="250" height="85" rx="12"/><rect x="48" y="240" width="250" height="85" rx="12"/>
+<rect x="410" y="170" width="340" height="180" rx="12"/>
+<rect x="855" y="130" width="295" height="85" rx="12"/><rect x="855" y="240" width="295" height="85" rx="12"/>
+<rect x="48" y="370" width="250" height="85" rx="12"/><rect x="410" y="405" width="340" height="65" rx="12"/>
+<rect x="855" y="370" width="295" height="85" rx="12"/>
+</g>
+<g font-size="18">
+<text x="67" y="163" font-weight="bold">Voltage potentiometer</text><text x="67" y="192">A0: 0-300 V equivalent</text>
+<text x="67" y="273" font-weight="bold">Current potentiometer</text><text x="67" y="302">A1: 0-20 A equivalent</text>
+<text x="435" y="209" font-size="23" font-weight="bold">UNO / ATmega328P</text>
+<text x="435" y="245">Sample + validate + compare</text><text x="435" y="274">Latch fault / qualify restart</text><text x="435" y="310">Nominal sample interval: 5 ms</text>
+<text x="874" y="163" font-weight="bold">Green LOAD LED (D8)</text><text x="874" y="192">Represents load switch state</text>
+<text x="874" y="273" font-weight="bold">Red FAULT LED (D13)</text><text x="874" y="302">Latched fault indication</text>
+<text x="67" y="402" font-weight="bold">Local buttons</text><text x="67" y="430">MENU / + / - / RESET</text>
+<text x="437" y="445">PC serial: GET / SET / RESET</text>
+<text x="874" y="402" font-weight="bold">LCD1602</text><text x="874" y="430">Values, state and settings</text>
+</g>
+<g fill="none" stroke="#007c91" stroke-width="3" marker-end="url(#arrow)">
+<path d="M298 173H350V225H410"/><path d="M298 283H410"/>
+<path d="M298 412H350V320H410"/><path d="M580 405V350"/>
+<path d="M750 220H805V173H855"/><path d="M750 283H855"/>
+<path d="M750 320H805V412H855"/>
+</g>
+</g></svg>

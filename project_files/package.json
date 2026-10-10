@@ -1,0 +1,7 @@
+{
+  "name": "uno-voltage-protector-tests",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {"test": "node tests/run_avr.cjs build/selftest/selftest.ino.hex"},
+  "dependencies": {"avr8js": "0.21.0"}
+}
